@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h2>Elastic Gantt</h2>
+    <ElasticGantt></ElasticGantt>
+    <h2>Frape Gantt</h2>
+    <FrappeGantt></FrappeGantt>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ElasticGantt from './components/ElasticGantt/ElasticGantt.vue';
+import FrappeGantt from './components/FrappeGantt/FrappeGantt.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ElasticGantt,
+    FrappeGantt
   }
 }
 </script>

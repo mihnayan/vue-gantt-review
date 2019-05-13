@@ -9,6 +9,11 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "dayjs": "^1.8.13",
+    "frappe-gantt": "^0.3.0",
+    "gantt-elastic": "^0.13.9",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
