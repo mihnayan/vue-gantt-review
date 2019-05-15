@@ -1,14 +1,21 @@
-# gantt-1
+# Vue Gantt Review
 
-## Project setup
+Обзор клиентских JS-библиотек для предтавления диаграмм Ганта с использованием Vue.
+
+Результаты обзора - в [resume.md](resume.md).
+
+## Установка
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Компиляция и запуск в режиме разработки
 ```
 npm run serve
 ```
+
+
+## Прочее
 
 ### Compiles and minifies for production
 ```

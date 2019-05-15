@@ -25,6 +25,7 @@ export default [
     end: '2019-01-31',
     progress: 100,
     type: 'task',
-    dependencies: 'Task 2'
+    dependencies: ['Task 2'],
+    parent_id: 'Task 2'
   }
 ];

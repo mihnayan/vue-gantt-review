@@ -44,7 +44,9 @@ export default {
           end: task.end,
           progress: task.progress,
           type: task.type,
-          style: taskStyles[task.type]
+          style: taskStyles[task.type],
+          parentId: task.parent_id,
+          dependentOn: task.dependencies
         }
       })
     }
