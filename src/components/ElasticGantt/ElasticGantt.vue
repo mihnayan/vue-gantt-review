@@ -1,5 +1,7 @@
 <template>
+<div>
   <gantt-elastic :tasks="tasks" :options="options"></gantt-elastic>
+</div>
 </template>
 
 <script>

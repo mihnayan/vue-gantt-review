@@ -1,5 +1,7 @@
 <template>
+<div>
   <svg id="gantt"></svg>
+</div>
 </template>
 
 <script>

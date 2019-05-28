@@ -1,5 +1,5 @@
 <template>
-  <div ref="gantt"></div>
+  <div id="gantt"></div>
 </template>
 
 <script>
@@ -28,10 +28,12 @@ export default {
       });
     }
   },
+  created () {
+    this.tasks.data = this.mapTasks(tasks);
+  },
   mounted () {
     gantt.config.xml_date = '%Y-%m-%d';
-    gantt.init(this.$refs.gantt);
-    this.tasks.data = this.mapTasks(tasks);
+    gantt.init('gantt');
     gantt.parse(this.tasks);
   }
 }
@@ -39,4 +41,7 @@ export default {
 
 <style>
   @import "~dhtmlx-gantt/codebase/dhtmlxgantt.css";
+  #gantt {
+    height: 200px;
+  }
 </style>
