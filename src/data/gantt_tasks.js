@@ -1,6 +1,6 @@
 export default [
   {
-    id: 'Task 1',
+    id: 'Task_1',
     description: 'Построить базу на Луне',
     user: 'Главный конструктор',
     start: '2019-01-01',
@@ -9,7 +9,7 @@ export default [
     type: 'project'
   },
   {
-    id: 'Task 2',
+    id: 'Task_2',
     description: 'Сконструировать лунные модули',
     user: 'Главный инженер лунного модуля',
     start: '2019-01-01',
@@ -18,14 +18,14 @@ export default [
     type: 'milestone'
   },
   {
-    id: 'Task 3',
+    id: 'Task_3',
     description: 'Привести материалы для лунных модулей',
     user: 'Главный прораб лунных модулей',
     start: '2019-01-08',
     end: '2019-01-31',
     progress: 100,
     type: 'task',
-    dependencies: ['Task 2'],
-    parent_id: 'Task 2'
+    dependencies: ['Task_2'],
+    parent_id: 'Task_2'
   }
 ];

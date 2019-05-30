@@ -18,21 +18,36 @@ export default {
   },
   methods: {
     mapTasks (tasks) {
-      return tasks.map(task => {
-        return {
+      let linkId = 1;
+      tasks.forEach(task => {
+        this.tasks.data.push({
           id: task.id,
           start_date: task.start,
           end_date: task.end,
-          text: task.description
+          text: task.description,
+          type: task.type,
+          progress: task.progress / 100,
+          parent: task.parentId
+        });
+        if (task.dependencies) {
+          task.dependencies.forEach(dependency => {
+            this.tasks.links.push({
+              id: linkId++,
+              source: dependency,
+              target: task.id,
+              type: "0"
+            })
+          });
         }
       });
     }
   },
   created () {
-    this.tasks.data = this.mapTasks(tasks);
+    this.mapTasks(tasks);
   },
   mounted () {
     gantt.config.xml_date = '%Y-%m-%d';
+    gantt.config.scale_unit = 'month';
     gantt.init('gantt');
     gantt.parse(this.tasks);
   }

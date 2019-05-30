@@ -90,13 +90,18 @@
 ## [dhtmlxGantt](https://dhtmlx.com/docs/products/dhtmlxGantt/)
 
 **Лицензия:** Свободная: GNU GPL v2. Платные: Commercial ($699), Enterprise ($1399),
-Ultimate ($2999)
+Ultimate ($2999).
 
 **Текущая версия:** 6.1.6
 
 **Дата последнего релиза:** 15.04.2019
 
 **Дата последних изменений:** 15.04.2019
+
+
+### Ссылки
+
+[Отличия стандартной версии от Pro](https://docs.dhtmlx.com/gantt/desktop__editions_comparison.html)
 
 [Описание свойств задач](https://docs.dhtmlx.com/gantt/desktop__loading.html#dataproperties)
 
@@ -113,6 +118,8 @@ Ultimate ($2999)
 
 ### Другие особенности
 
+* Задачи как данные представляют собой объект, состоящий из двух массивов: непосредственно
+  списка задач `data` и списка описания зависимостей между задачами `links`.
 * Дата по умолчанию задаётся не в формате: `%d-%m-%Y %H:%i`. Это можно изменить
   при конфигурации с помощью параметра `xml_date`: `gantt.config.xml_date = '%Y-%m-%d %H:%i';`.
   Подробнее о [настройке](https://docs.dhtmlx.com/gantt/api__gantt_xml_date_config.html)
